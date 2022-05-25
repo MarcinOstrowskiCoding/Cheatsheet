@@ -72,13 +72,20 @@ pre {
 /* Table column width for 'Position Values' table*/
 
 .positions .first-col {
-    width: 80px;
+    width: 100px;
 }
 
 .positions .second-col {
     width: 50px;
 }
 
+.positions .third-col {
+    width: 70px;
+}
+
+.positions .fourth-col {
+    width: 50px;
+}
 
 /* Colors: HTML table tags secion */
 
