@@ -21,7 +21,6 @@ table {
 
 td {
     font-size: 16px;
-    border-bottom: 1px solid green;
     height: 1.3em;
 }
 
@@ -55,7 +54,7 @@ pre {
 
 .examples {
     width: 100%;
-    height: 300px;
+    height: 380px;
 }
 
 .code-example {
@@ -70,7 +69,18 @@ pre {
     width: 350px;
 }
 
-/* Colors: table tags secion */
+/* Table column width for 'Position Values' table*/
+
+.positions .first-col {
+    width: 80px;
+}
+
+.positions .second-col {
+    width: 50px;
+}
+
+
+/* Colors: HTML table tags secion */
 
 .tabletags thead {
     background-color: lightgreen;
@@ -82,4 +92,27 @@ pre {
 
 .tabletags table {
     border: 3px solid green;
+}
+
+.tabletags td {
+    border-bottom: 1px solid green;
+}
+
+
+/* Colors: CSS position property section  */
+
+.positions thead {
+    background-color: lightcoral;
+}
+
+.positions h2 {
+    color: red;
+}
+
+.positions table {
+    border: 3px solid red;
+}
+
+.positions td {
+    border-bottom: 1px solid red;
 }
