@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="./resources/css/styles.css">
 </head>
 <body>
-
-    <!-- Header section -->
-    <header></header>
-
-    <!-- H1 section -->
-    <section>
-        <h1>My personal coding cheatsheet</h1>
-    </section>
-
+    <header>
+        <h1>Web Dev Coding Cheatsheet</h1>
+        <nav>
+            <ul>
+                <li><a href="#anchor-HTML-tables">HTML Tables</a></li>
+                <li><a href="#anchor-CSS-position">CSS Position</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- Cheatsheet Section -->
-    <section>
+    <section class="cheatsheet">
+        
 
         <!-- Table Tags Section -->
-        <section class="tabletags">
-            <h2>Table Tags</h2>
+        <section class="tabletags" >
+            <span id="anchor-HTML-tables"></span>
+            <h2>HTML Tables</h2>
             <table>
+                <caption align="top">Table Tags Description:</caption>
                 <thead>
                     <tr>
-                        <td>Tag</td>
-                        <td>Name</td>
+                        <td class="first-col">Tag</td>
+                        <td class="second-col">Name</td>
                         <td>Description</td>
                     </tr>
                 </thead>
@@ -36,6 +39,13 @@
                         <td class="code"><span>&lt;table&gt;</span></td>
                         <td>Table</td>
                         <td>Defines html table</td>
+                    </tr>
+                    <tr>
+                        <td class="code"><span>&lt;caption&gt;</span></td>
+                        <td>Caption</td>
+                        <td>Adds descripion to table. Use align attirbute, with values: 
+                            left, top, right, bottom, to specify where caption text 
+                            will display</td>
                     </tr>
                     <tr>
                         <td class="code"><span>&lt;thead&gt;</span></td>
@@ -64,35 +74,35 @@
                     </tr>
                 </tbody>
             </table>
-            <h2>Code Example</h2>
+            <h3>Code Example:</h3>
             
             <!--                   Examle Section                       -->
             <!--(contains Code Example and Running Example Code Section)-->
-            <section class="examples">
+            <section>
 
             <!--                Code Example Section                    -->
             <!-- using <pre> tag for displaying code with indentations  -->
             <!-- using htmlspecialchars: &lt; for < and &gt; for >      -->
-                <section class="code-example">
+                <section>
                     <pre>
 &lt;table&gt;
     &lt;thead&gt;
         &lt;tr&gt;
             &lt;td&gt;Name&lt;/td&gt;
             &lt;td&gt;Age&lt;/td&gt;
-            &lt;td&gt;Hight&lt;/td&gt;
+            &lt;td&gt;Description&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
             &lt;td&gt;Marc&lt;/td&gt;
             &lt;td&gt;21&lt;/td&gt;
-            &lt;td&gt;174cm&lt;/td&gt;
+            &lt;td&gt;Colledge student. Loves football and junk food.&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;Ula&lt;/td&gt;
             &lt;td&gt;38&lt;/td&gt;
-            &lt;td&gt;156cm&lt;/td&gt;
+            &lt;td&gt;Modern art designer. Loves pets and moutain hiking.&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt; </pre>
@@ -101,26 +111,27 @@
             <!--               Running Example Code Section                    -->
             <!--          (shows table created from Code Example)              -->
 
-                <section class="code-running">
+                <section>
 
                     <table>
+                        <caption>Running Code Examle</caption>
                         <thead>
                             <tr>
                                 <td>Name</td>
                                 <td>Age</td>
-                                <td>Height</td>
+                                <td>Description</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Marc</td>
                                 <td>21</td>
-                                <td>174cm</td>
+                                <td>Colledge student. Loves football and junk food.</td>
                             </tr>
                             <tr>
                                 <td>Ula</td>
                                 <td>38</td>
-                                <td>156cm</td>
+                                <td>Modern art designer. Loves pets and moutain hiking.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -131,8 +142,10 @@
         <!--               Position Values Section                  -->
         <!--            (section displayed in red color)            -->
         <section class="positions">
-            <h2>Position Values</h2>
+            <span id="anchor-CSS-position"></span>
+            <h2>CSS Position</h2>
             <table>
+                <caption align="top">Position Values</caption>
                 <thead>
                     <tr>
                         <td class="first-col">Value</td>
@@ -182,16 +195,25 @@
                 </tbody>
 
             </table>
-            <p>FoD: stays in flow of document</p>
-            <p>Stacks: enables z-index </p>
-            <p>TRBL: enables top, right, bottom, left properties</p>
-            <p></p>
-
             <section>
-                <h2>Code Example</h2>
+                <p>FoD: stays in flow of document</p>
+                <p>Stacks: enables z-index </p>
+                <p>TRBL: enables top, right, bottom, left properties</p>
             </section>
+
+            <section class="position-examples">
+                <h2>Example</h2>
+            </section> <!-- closing tag for Position Examples Section -->
 
         </section> <!--closing tag for Position Values Section-->
     </section> <!--closing tag for Cheatsheet Section-->
+
+    <footer>
+        <section>
+            <p id="credits">coded by: Marcin Ostrowski</p>
+        </section>
+        
+    </footer>
+
 </body>
 </html>

@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 700px;
     margin: 0 auto;
@@ -5,23 +10,70 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    text-align: center;
+/* Header CSS rule sets*/
+
+header {
+    position: sticky;
+    top: 0px;
+    height: 90px;
+    padding-top: 20px;
+    background-color: lightgray;
+    border-bottom: 1px solid white;
 }
 
+
+nav, h1 {
+    font-family: "Lucida Grande", sans-serif;
+    background-color: #1f2f2f;
+    color: white;
+}
+
+nav {
+    font-size: 14px;
+    display: inline-flex;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+    border: 2px solid gray;
+    border-top-width: 0px;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 0px;
+    border: 2px solid gray;
+}
+
+li {
+    display: inline-flex;
+    margin: 6px 10px;
+}
+
+/* Cheatsheet Section CSS rule sets */
+
 h2 {
-    text-align: left;
-    margin-top: 35px;
-    margin-bottom: 4px;
+    font-size: 26px;
+    text-align: center;
 }
 
 p {
     font-size: small;
-    margin: 5px 15px;
+    margin: 3px 15px;
 }
 
 table {
     width: 100%;
+}
+
+h3, caption {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    margin-left: 5px;
 }
 
 td {
@@ -35,6 +87,37 @@ thead td {
     text-align: center;
 }
 
+/* Footer and credits*/
+
+footer {
+    background-color: lightgray;
+    height: 70px;
+    width: 700px;
+    position: fixed;
+    bottom: 0px;
+    border-top: 1px solid white;
+}
+
+footer section {
+    background-color: black;
+    border: 2px solid gray;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+}
+
+#credits {
+    font-size: small;
+    color: white;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+/* Code examples CSS rules*/
+/* Code inside table*/
+
 .code {
     font-size: 14px;
     font-family: monospace, sans-serif;
@@ -46,33 +129,71 @@ thead td {
     background-color: white;
 }
 
+/* Standalone code examples */
+
 pre {
     font-size: 14px;
     font-family: monospace, sans-serif;
-    color: white;
-    background-color: black;
-    border: 3px solid green;
+    color: greenyellow;
+    background-color: #1f2f2f;
+    border: 2px solid black;
     padding: 8px;
-    width: 320px;
     margin-top: 0px;
 }
 
-.examples {
-    width: 100%;
-    height: 380px;
+/* Anchor elements*/
+
+a {
+    text-decoration: none;
 }
 
-.code-example {
-    position: relative;
-    width: 300px;
+a, a:visited, a:active {
+    color: inherit;
 }
 
-.code-running {
-    position: relative;
-    top: -393px;
-    left: 350px;
-    width: 350px;
+a:hover {
+    color:lightgray
 }
+
+/* Anchor position fixing*/
+
+#anchor-HTML-tables, 
+#anchor-CSS-position {
+    display: block;
+    position: relative;
+    top: -113px;
+    visibility: hidden;
+}
+
+/* Sections positioning*/
+
+section.positions,
+section.position-examples {
+    margin-top: 40px;
+}
+
+section.cheatsheet {
+    margin-bottom: 70px;
+}
+
+/* White borders of Cheatsheet Section (Left and Right)      */
+/* Top border is coded into Header, Bottom border into Footer*/
+
+section.cheatsheet {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+/* Table column width for 'HTML Table Tags' table*/
+
+.tabletags .first-col {
+    width: 80px;
+}
+
+.tabletags .second-col {
+    width: 100px;
+}
+
 
 /* Table column width for 'Position Values' table*/
 
@@ -94,16 +215,22 @@ pre {
 
 /* Colors: HTML table tags secion */
 
+section.tabletags {
+    background-color: #b4d1ba;
+    border: 1px solid #d3e4d6;
+}
+
+.tabletags h2 {
+    background-color: #74aa7f;
+    border: 2px solid darkgreen;
+}
+
 .tabletags thead {
     background-color: lightgreen;
 }
 
-.tabletags h2 {
-    color: green;
-}
-
 .tabletags table {
-    border: 3px solid green;
+    border: 2px solid green;
 }
 
 .tabletags td {
@@ -111,20 +238,33 @@ pre {
 }
 
 
-/* Colors: CSS position property section  */
+/* Colors: CSS Position property section  */
 
-.positions thead {
-    background-color: lightcoral;
+section.positions {
+    background-color: #ffccc4;
+    border: 2px solid #ffdcd6;
 }
 
 .positions h2 {
-    color: red;
+    background-color: #ff725c;
+    border: 2px solid red;
+}
+
+.positions thead {
+    background-color: #ff9e8f;
 }
 
 .positions table {
-    border: 3px solid red;
+    border: 2px solid red;
 }
 
 .positions td {
     border-bottom: 1px solid red;
+}
+
+/* Section Positions height fix */
+/* Delete this code after adding more content so page is high enough*/
+
+section.positions {
+    height: 1000px;
 }
