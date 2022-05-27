@@ -18,7 +18,7 @@ header {
     height: 90px;
     padding-top: 20px;
     background-color: lightgray;
-    border-bottom: 1px solid white;
+    z-index: 100;
 }
 
 
@@ -46,7 +46,7 @@ h1 {
     border: 2px solid gray;
 }
 
-li {
+nav li {
     display: inline-flex;
     margin: 6px 10px;
 }
@@ -91,29 +91,39 @@ thead td {
 
 footer {
     background-color: lightgray;
-    height: 70px;
+    height: 80px;
     width: 700px;
     position: fixed;
     bottom: 0px;
-    border-top: 1px solid white;
 }
 
-footer section {
+footer ul {
     background-color: black;
     border: 2px solid gray;
     box-sizing: border-box;
     height: 40px;
     width: 100%;
     position: absolute;
-    bottom: 15px;
+    bottom: 25px;
+}
+
+footer li {
+    display: inline-flex;
+    margin: 6px 55px;
+    font-size: small;
+    color: white;
+    margin-top: 11px;
 }
 
 #credits {
-    font-size: small;
-    color: white;
-    font-style: italic;
-    margin-top: 12px;
+    color:black;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
 }
+
 
 /* Code examples CSS rules*/
 /* Code inside table*/
@@ -176,12 +186,21 @@ section.cheatsheet {
     margin-bottom: 70px;
 }
 
-/* White borders of Cheatsheet Section (Left and Right)      */
+/* White borders of Cheatsheet Section                       */
 /* Top border is coded into Header, Bottom border into Footer*/
+/*  Left and Right borders are coded into Cheatsheet Section */
 
 section.cheatsheet {
     border-left: 1px solid white;
     border-right: 1px solid white;
+}
+
+header {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    border-top: 1px solid white;
 }
 
 /* Table column width for 'HTML Table Tags' table*/
@@ -211,6 +230,13 @@ section.cheatsheet {
 
 .positions .fourth-col {
     width: 50px;
+}
+
+/* Scrolling effect on Section Headers*/
+.tabletags h2,
+.positions h2 {
+    position: sticky;
+    top: 111px;
 }
 
 /* Colors: HTML table tags secion */
