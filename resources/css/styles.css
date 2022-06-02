@@ -101,6 +101,7 @@ footer {
     width: 700px;
     position: fixed;
     bottom: 0px;
+    z-index: 200;
 }
 
 footer ul {
@@ -314,10 +315,9 @@ section.positions {
 }
 
 div.box-before {
-    position: static;
     background-color: gray;
-    margin: 60px;
     opacity: 0.5;
+    left: 60px;
 }
 
 div.box-now {
@@ -325,6 +325,10 @@ div.box-now {
     border: 1px solid black;
     opacity: 1;
 }
+
+
+/*  Coding boxes so that thay appear as having    */
+/*  position properties determined by p tag text  */
 
 #static {
     position: absolute;
@@ -340,7 +344,7 @@ div.box-now {
 
 #absolute {
     position: absolute;
-    bottom: -140px;
+    top: 480px;
     left: 150px;    
 }
 
@@ -359,23 +363,30 @@ div.box-now {
     z-index: 120;
 }
 
+/*            Positioning 'Static' Boxes               */
+
 #static-before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 60px;
 }
 
 #sticky-before {
-    position: absolute;
-    top: 120px;
+    top: 180px;
 }
 
 #relative-before {
-    margin-top: 0px;
+    top: 300px;
+}
+
+#absolute-before {
+    top: 420px;
+}
+
+#fixed-before {
+    top: 540px;
 }
 
 #empty-space {
-    height: 300px;
+    height: 700px;
 }
 
 /********************************************************/

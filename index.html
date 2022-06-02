@@ -26,7 +26,7 @@
             <span id="anchor-HTML-tables"></span>
             <h2>HTML Tables</h2>
             <table>
-                <caption align="top">Table Tags Description:</caption>
+                <caption>Table Tags Description:</caption>
                 <thead>
                     <tr>
                         <td class="first-col">Tag</td>
@@ -145,7 +145,7 @@
             <span id="anchor-CSS-position"></span>
             <h2>CSS Position</h2>
             <table>
-                <caption align="top">Position Values</caption>
+                <caption>Position Values</caption>
                 <thead>
                     <tr>
                         <td class="first-col">Value</td>
@@ -168,14 +168,15 @@
                         <td>Yes</td>
                         <td>Yes</td>
                         <td>Yes</td>
-                        <td>Enables use of TRBL offsets and z-index</td>
+                        <td>Offsets element relative to itself</td>
                     </tr>
                     <tr>
                         <td>Absolute</td>
                         <td>No</td>
                         <td>Yes</td>
                         <td>Yes</td>
-                        <td>Offsets element relative to closest ancestor</td>
+                        <td>Offsets element relative to padding box of
+                             closest ancestor</td>
                     </tr>
                     <tr>
                         <td>Fixed</td>
@@ -190,7 +191,8 @@
                         <td>Yes</td>
                         <td>Always</td>
                         <td>Yes</td>
-                        <td>Scrolling effect. Offsets relative to its nearest scrolling ancestor and containing block</td>
+                        <td>Scrolling effect. Offsets relative to content
+                             box of closest ancestor</td>
                     </tr>
                 </tbody>
 
@@ -218,6 +220,10 @@ div {
     background-color: lightcoral;
 }
 
+#static {
+    position: static; /*default*/
+}
+
 #sticky {
     position: sticky;
     left: 130px;
@@ -241,10 +247,7 @@ div {
     top: 240px;
     left: 120px;
     z-index: 50;
-}
-
-/* static is default position, */
-/* so no changes are neaded    */</pre>
+}                       </pre>
                     </div>
                 </section>
 
@@ -258,8 +261,8 @@ div {
                         <div class="box-before" id="static-before"><p>static</p></div>
                         <div class="box-before" id="sticky-before"><p>sticky</p></div>
                         <div class="box-before" id="relative-before"><p>relative</p></div>
-                        <div class="box-before"><p>absolute</p></div>
-                        <div class="box-before"><p>fixed</p></div>
+                        <div class="box-before" id="absolute-before"><p>absolute</p></div>
+                        <div class="box-before" id="fixed-before"><p>fixed</p></div>
                         <div class="box-now" id="static"><p>static</p></div>
                         <div class="box-now" id="relative"><p>relative</p></div>
                         <div class="box-now" id="absolute"><p>absolute</p></div>
