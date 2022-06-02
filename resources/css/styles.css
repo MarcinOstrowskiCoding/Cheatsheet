@@ -153,7 +153,6 @@ pre {
     font-family: monospace, sans-serif;
     color: greenyellow;
     background-color: #1f2f2f;
-    border: 2px solid black;
     padding: 8px;
     margin-top: 0px;
 }
@@ -261,7 +260,6 @@ section.positions {
 
 .position-examples {
     position: relative;
-    border: 1px dotted black;
     height: 460px;
     z-index: 0;
 }
@@ -336,31 +334,44 @@ div.box-now {
 
 #relative {
     position: absolute;
-    top: 150px ;
+    top: 330px;
     left: 90px;
 }
 
 #absolute {
     position: absolute;
-    bottom: -22px;
-    left: 180px;    
+    bottom: -140px;
+    left: 150px;    
+}
+
+#fixed {
+    position: sticky;
+    top: 300px;
+    left: 180px;
+    z-index: 120;
 }
 
 #sticky {
     position: sticky;
-    top: 20px;
-    left: 130px;
+    top: 10px;
+    margin-top: 180px;
+    margin-left: 130px;
     z-index: 120;
 }
 
-#first-box {
+#static-before {
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
-#second-box {
-    margin-top: 120px;
+#sticky-before {
+    position: absolute;
+    top: 120px;
+}
+
+#relative-before {
+    margin-top: 0px;
 }
 
 #empty-space {
@@ -427,4 +438,8 @@ section.positions {
 
 .positions td {
     border-bottom: 1px solid red;
+}
+
+.code-box div {
+    background-color: #1f2f2f;
 }

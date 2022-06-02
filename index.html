@@ -211,29 +211,40 @@
                     <h3>Code Example</h3>
                     <div>
                         <pre>
-.code-box {
-    border: 2px solid black;
-    width: 310px;
-    height: 400px;
-    position: absolute;
-    top: 15px;
-    left: 20px;
+div {
+    margin: 60px;
+    height: 60px;
+    width: 60px;
+    background-color: lightcoral;
 }
 
-.code-box {
-    border: 2px solid black;
-    width: 310px;
-    height: 400px;
-    position: absolute;
-    top: 15px;
-    left: 20px;
+#sticky {
+    position: sticky;
+    left: 130px;
+    z-index: 100;
 }
 
+#relative {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
 
+#absolute {
+    position: absolute;
+    top: 420px;
+    left: 90px;
+}
 
+#fixed {
+    position: fixed;
+    top: 240px;
+    left: 120px;
+    z-index: 50;
+}
 
-
-                        </pre>
+/* static is default position, */
+/* so no changes are neaded    */</pre>
                     </div>
                 </section>
 
@@ -243,10 +254,12 @@
                     <h3>Runing Code Example</h3>
                     <div>
                         <div class="box-now" id="sticky"><p>sticky</p></div>
-                        <div class="box-before" id="first-box"><p>static</p></div>
-                        <div class="box-before" id="second-box"><p>relative</p></div>
+                        <div class="box-now" id="fixed"><p>fixed</p></div>
+                        <div class="box-before" id="static-before"><p>static</p></div>
+                        <div class="box-before" id="sticky-before"><p>sticky</p></div>
+                        <div class="box-before" id="relative-before"><p>relative</p></div>
                         <div class="box-before"><p>absolute</p></div>
-                        <div class="box-before"><p>sticky</p></div>
+                        <div class="box-before"><p>fixed</p></div>
                         <div class="box-now" id="static"><p>static</p></div>
                         <div class="box-now" id="relative"><p>relative</p></div>
                         <div class="box-now" id="absolute"><p>absolute</p></div>
